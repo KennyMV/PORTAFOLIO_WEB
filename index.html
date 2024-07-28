@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Kenny Montero</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #f0f0f0;
+        }
+        .section-header {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .profile-image {
+            border-radius: 100%;
+            border: 5px solid #007bff;
+            animation: heartbeat 10s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            20% { transform: scale(1.1); }
+            40% { transform: scale(1); }
+            60% { transform: scale(1.1); }
+            80% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        .card {
+            margin: 10px 0;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .embed-responsive {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido Aquí -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Kenny Montero</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#perfil">Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#videos">Videos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Sección Perfil -->
+<section id="perfil" class="container mt-5 pt-5">
+    <div class="section-header">
+        <h2>Desarrollador Frontend (UI/UX)</h2>
+        <img src="Desarrollador.png" alt="Perfil" class="profile-image img-fluid mt-3" width="150">
+        <div class="mt-3 text-center">
+            <h3>Kenny Montero</h3>
+            <p>Ingeniero en Sistemas y Computación | Programador FullStack | Frontend y Backend | Analista de Datos Senior</p>
+        </div>
+    </div>
+</section>
+<!-- Sección Proyectos -->
+<section id="proyectos" class="container mt-5">
+    <div class="section-header">
+        <h2>Proyectos</h2>
+    </div>
+    <div class="row">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="UX_que_es.png" class="card-img-top" alt="UX">
+                <div class="card-body">
+                    <p class="card-text">El término UX viene de User Experience, o Experiencia del Usuario. Básicamente es cómo una persona se siente mientras usa cualquier producto o servicio digital que tu empresa ofrece.</p>
+                    <a href="#" class="btn btn-primary">Ver más...</a>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="importancia_UI.png" class="card-img-top" alt="UI">
+                <div class="card-body">
+                    <p class="card-text">La expresión UI viene de User Interface, que significa Interfaz del Usuario. La idea del UI es guiar al usuario por tu aplicación durante el tiempo que él la usa.</p>
+                    <a href="#" class="btn btn-primary">Ver más...</a>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="diferencias_ux_ui.png" class="card-img-top" alt="Diferencias UX/UI">
+                <div class="card-body">
+                    <p class="card-text">Pensemos de esta forma, un ilustrador o un diseñador gráfico pueden hacer un excelente trabajo de UI, incluso si no tienen experiencia en las plataformas para diseño web.</p>
+                    <a href="#" class="btn btn-primary">Ver más...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección Videos -->
+<section id="videos" class="container mt-5">
+    <div class="section-header">
+        <h2>Videos</h2>
+    </div>
+    <div class="row">
+        <!-- Video 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZLGSLqORpxA" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- Video 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yJOdW_P1oPQ" allowfullscreen></iframe>
+            </div>
+           </div>
+        <!-- Video 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2Kd0rzp6Fwc" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección Contacto -->
+<section id="contacto" class="container mt-5">
+    <div class="section-header">
+        <h2>Contacto</h2>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+        </div>
+        <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+<!-- Footer -->
+<footer class="footer mt-5">
+    <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://x.com/?lang=es" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+    </div>
+    <p>&copy; 2024 Kenny Montero. Todos los derechos reservados.</p>
+</footer>
